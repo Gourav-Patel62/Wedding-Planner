@@ -1,0 +1,200 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Search Form Styles */
+  
+  .search-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .search-form input, .search-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Search Results Styles */
+  
+  .search-results {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #venue-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #venue-list li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #venue-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .venue-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .venue-details .venue-name {
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .venue-details .venue-address {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .venue-details .venue-cost {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    header nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    header nav ul {
+      flex-direction: column;
+    }
+    header nav li {
+      margin-right: 0;
+    }
+    .search-form {
+      max-width: 400px;
+    }
+    .search-results {
+      max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header nav {
+      padding: 10px;
+    }
+    .search-form {
+      max-width: 300px;
+    }
+    .search-results {
+      max-width: 400px;
+    }
+  }
